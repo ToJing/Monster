@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+﻿<html>
+
+    <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
@@ -15,227 +15,116 @@
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
     <!-- CUSTOM STYLE CSS -->
     <link href="assets/css/style.css" rel="stylesheet" />
+	<script language="javascript">
+var n = 0;
+function changeImg(n)
+{var img=new Array("assets/img/a4.png","assets/img/a3.png","assets/img/a2.png");
+  document.getElementById("image").src=img[n];
+   switch(n){
+   case 0:
+   document.getElementById("l0").className="active";
+   document.getElementById("l1").className="empty";
+   document.getElementById("l2").className="empty";
+   break;
+   case 1:
+   document.getElementById("l0").className="empty";
+   document.getElementById("l1").className="active";
+   document.getElementById("l2").className="empty";
+   break;
+   case 2:
+   document.getElementById("l0").className="empty";
+   document.getElementById("l1").className="empty";
+   document.getElementById("l2").className="active";
+   break;
+   }
+}
+
+
+
+var sh;
+sh=setInterval("changeImg((n++)%3)",2000);
+function changType(lk){
+	
+    n=lk;
+	 switch(n){
+   case 0:
+   document.getElementById("l0").className="active";
+   document.getElementById("l1").className="empty";
+   document.getElementById("l2").className="empty";
+   break;
+   case 1:
+   document.getElementById("l0").className="empty";
+   document.getElementById("l1").className="active";
+   document.getElementById("l2").className="empty";
+   break;
+   case 2:
+   document.getElementById("l0").className="empty";
+   document.getElementById("l1").className="empty";
+   document.getElementById("l2").className="active";
+   break;
+   }
+document.getElementById("image").src=img[n];
+}
+
+</script>
 </head>
-<body>
 
-
-    <section class="header-section">
+	<body>
+	 <!--HOME SECTION -->
+	<section class="header-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
                     <img src="assets/img/person.jpg" class="img-circle img-responsive" />
                 </div>
-                <div class="col-md-5 text-center">
-                    <h1><strong>Jhon Alexan </strong></h1>
-                    <h4>Blogger & Designer</h4>
-                </div>
-                <div class="col-md-5">
-                    <h3>WHO M I :</h3>
-
-                    I am a 26 years old guy who loves bloggging and designing .
-                      I will provide all my works for free here with some good piece of information.
-                     You can reach me at <i><strong>info@mydomain.com</strong></i>
-                </div>
+                <div >
+	
+					<p class="col-md-1"><h3>生的再平凡也是限量版</h3></p>
+					<p class="coL-md-3"><h3>既然是限量版就该有限量版的价值</h3></p>
+					<p class="col-md-7"><h4>----By:衣胜雪</h4></p>
+				</div>
             </div>
         </div>
     </section>
-    <!--HOME SECTION END-->
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2 spon-txt">
-                    <span>My Sponsers: </span>
-                </div>
-                <div class="col-md-10">
-                    <img src="assets/img/clients.png" alt="" class="img-rounded img-responsive" />
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-    <!--SPONSORS SECTION END-->
-    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
-    <hr />
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9">
-                    <div class="blog-main">
-                        <div class="heading-blog">
-                            The security is main concern while developing applications
-                        </div>
-                         <a href="singlepost.html">
-                        <img src="assets/img/1.jpg" class="img-responsive img-rounded" />
-                             </a>
-                        <div class="blog-info">
-                            <span class="label label-primary">Posted on 26th November 2014</span>
-                            <span class="label label-success">In Technology</span>
-                            <span class="label label-danger">By Jhon</span>
-                            <span class="label label-info">
-                                <i class="fa fa-thumbs-up"></i>+ 10
-                        <i class="fa fa-thumbs-down"></i>-3
-                            </span>
-                        </div>
-                        <div class="blog-txt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Fusce nec tellus non diam feugiat commodo. Sed auctor mauris a tristique imperdiet. 
-                        Nullam egestas sapien non lectus suscipit, quis tristique odio imperdiet.
-                         Nullam elit lacus, tincidunt eget faucibus eget, vestibulum venenatis metus.
-                        Praesent efficitur quam aliquam mauris sagittis, vel lacinia risus luctus. Ut vitae bibendum ipsum.
-                        </div>
-                    </div>
-                    <!--BLOG ONE END -->
-                    <div class="blog-main">
-                        <div class="heading-blog">
-                            The security is main concern while developing applications
-                        </div>
-                         <a href="singlepost.html">
-                        <img src="assets/img/2.jpg" class="img-responsive img-rounded" />
-                             </a>
-                        <div class="blog-info">
-                            <span class="label label-primary">Posted on 26th November 2014</span>
-                            <span class="label label-success">In Technology</span>
-                            <span class="label label-danger">By Jhon</span>
-                            <span class="label label-info">
-                                <i class="fa fa-thumbs-up"></i>+ 10
-                        <i class="fa fa-thumbs-down"></i>-3
-                            </span>
-                        </div>
-                        <div class="blog-txt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Fusce nec tellus non diam feugiat commodo. Sed auctor mauris a tristique imperdiet. 
-                        Nullam egestas sapien non lectus suscipit, quis tristique odio imperdiet.
-                         Nullam elit lacus, tincidunt eget faucibus eget, vestibulum venenatis metus.
-                        Praesent efficitur quam aliquam mauris sagittis, vel lacinia risus luctus. Ut vitae bibendum ipsum.
-                        </div>
-                    </div>
-                     <!--BLOG TWO END -->
-                    <div class="blog-main">
-                        <div class="heading-blog">
-                            The security is main concern while developing applications
-                        </div>
-                        <a href="singlepost.html">
-                        <img src="assets/img/3.jpg" class="img-responsive img-rounded" />
-                            </a>
-                        <div class="blog-info">
-                            <span class="label label-primary">Posted on 26th November 2014</span>
-                            <span class="label label-success">In Technology</span>
-                            <span class="label label-danger">By Jhon</span>
-                            <span class="label label-info">
-                                <i class="fa fa-thumbs-up"></i>+ 10
-                        <i class="fa fa-thumbs-down"></i>-3
-                            </span>
-                        </div>
-                        <div class="blog-txt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Fusce nec tellus non diam feugiat commodo. Sed auctor mauris a tristique imperdiet. 
-                        Nullam egestas sapien non lectus suscipit, quis tristique odio imperdiet.
-                         Nullam elit lacus, tincidunt eget faucibus eget, vestibulum venenatis metus.
-                        Praesent efficitur quam aliquam mauris sagittis, vel lacinia risus luctus. Ut vitae bibendum ipsum.
-                        </div>
-                    </div>
-                     <!--BLOG THREE END -->
-                    <nav>
-                        <ul class="pagination">
-                            <li class="disabled"><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
-                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">2 <span class="sr-only"></span></a></li>
-                            <li><a href="#">3 <span class="sr-only"></span></a></li>
-                            <li><a href="#">4 <span class="sr-only"></span></a></li>
-                            <li><a href="#">5 <span class="sr-only"></span></a></li>
-                            <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
-                        </ul>
-                    </nav>
-                     <!--PAGING  END -->
-                </div>
-                <div class="col-md-3">
-
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <strong>Main Categories</strong>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge">104</span>
-                            Technology 
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge">34</span>
-                            Blogging 
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge">10</span>
-                            Information 
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge">50</span>
-                            Security 
-                        </li>
-                        <li class="list-group-item">
-                            <strong>Other Categories</strong>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge">104</span>
-                            Technology 
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge">34</span>
-                            Blogging 
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge">10</span>
-                            Information 
-                        </li>
-                        <li class="list-group-item">
-                            <span class="badge">50</span>
-                            Security 
-                        </li>
-                    </ul>
-                    <br />
-
-                    <ul class="list-group">
-                        <li class="list-group-item">Advrtisements
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">
-                                <img src="assets/img/ad1.jpg" class="img-responsive" />
-                            </a>
-                            <br />
-                            <a href="#">
-                                <img src="assets/img/ad2.jpg" class="img-responsive" />
-                            </a>
-                        </li>
-                    </ul>
-
-                    <br />
-                    <div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Subscribe For Updates</h3>
-                            </div>
-                            <div class="panel-body">
-                                <input type="text" class="form-control" placeholder="Your Email" />
-                                <hr />
-                                <a href="#" class="btn btn-info btn-sm btn-block">subscribe</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-        </div>
-    </section>
-    <hr />
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center set-foot">
-                &copy 2014 jhon alexan |  More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
-            </div>
-        </div>
+	   <!--中间的两条竖线-->
+	<div class="header-top"> 
+	<div class="left"></div>
+    <div class="right"></div>	
+	</div>
+	<!--横栏展示信息-->
+	<section>
+	<div class="header">
+		<div class="header_resize">
+			<div class="menu_nav">
+				<ul>
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="support.html">Support</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="clr"></div>
+		</div>
     </div>
-
-</body>
+	</section>
+    <!--中间的图片栏-->
+	
+	<div class="header_resize">
+		<img id="image" src="assets/img/a4.png" class="blog_image img-rounded" />
+		<div class="blog_image_right">
+			<ul>
+				<li id="l0" class="active"><img src="assets/img/a4.png" onmousemove="image.src='assets/img/a4.png'" onmouseout="changeBack" onclick="changType(0)" class="blog_image_right img-rounded" /></li>
+				<li id="l1"><img src="assets/img/a3.png" onmousemove="image.src='assets/img/a3.png'"  onclick="changType(1)"" class="blog_image_right img-rounded" /></li>
+				<li id="l2"><img src="assets/img/a2.png" onmousemove="image.src='assets/img/a2.png'" onclick="changType(2)"" class="blog_image_right img-rounded" /></li>
+				
+			<ul>
+		</div>
+		<div class="clr"></div>
+	</div>
+	<!--书写页面-->
+	<section id="yes">
+	
+	</section>
+	</body>
 </html>

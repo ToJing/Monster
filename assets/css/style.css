@@ -12,18 +12,51 @@ body {
     line-height:25px;
     font-size:14px;
 }
+.header-top{
+	clear:both; 
+	width:100%;
+	height:40px; 
+	margin:0px auto;
+	
+}
 
 
+.left {
+  background-color:#065883;
+  color:#fff;
+  height:40px;
+  width:10px;
+  float:left;
+
+  margin-left:35%;
+
+}
+.right {
+  background-color:#065883;
+  color:#fff;
+  height:40px;
+  width:10px;
+  float:right;
+  margin-right:35%;
+
+}
 .header-section {
   background-color:#065883;
   color:#fff;
+  padding:40px 5px;
+}
+.header-bottom {
+  background-color:#065883;
+  color:#fff;
+  margin-left:400px;
+  margin-right:400px;
   padding:40px 5px;
 }
     .header-section img {
         max-width:150px;
         border:2px solid #fff;
     }
-
+	
 .spon-txt {
     padding:40px 5px;
     font-size:25px;
@@ -59,7 +92,39 @@ body {
 .copyrights{
 	text-indent:-9999px;
 	height:0;
-	line-height:0;
+	line-height:0
 	font-size:0;
 	overflow:hidden;
 }
+/* header */
+.header { padding:0 0 10px;}
+.header_resize { margin:0 auto; padding:0; width:970px; background-color:#065883;}
+
+.menu_nav { margin:0; padding:0 0 0 40px; float:left;}
+.menu_nav ul { list-style:none;}
+.menu_nav ul li { margin:0; padding:0 20px 0 0; float:left;text-align:center;}
+.menu_nav ul li a { display:block; margin:0; padding:10px 24px; color:white; text-decoration:none; font-size:20px; text-transform:uppercase;}
+.menu_nav ul li.active a, .menu_nav ul li a:hover { background:gray; color:#fff;}
+.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
+
+.blog_image{
+	padding:15px 0px 15px 10px;
+	display:block;
+	width:700px;
+	height:300px;
+	float:left;
+;
+}
+.blog_image_right{
+	padding:15px 40px 15px 40px;
+	display:block;
+	width:200px;
+	height:90px;
+	float:right;
+}
+.blog_image_right ul{list-style:none;padding:0;margin:0;}
+.blog_image_right ul li{margin:0;}
+.blog_image_right ul li img{display:block;padding:10px 24px;margin:0;text-decoration:none;text-transform:uppercase;width:200px;height:90px;}
+.blog_image_right ul li.active img ,.blog_image_right ul li img:hover{background:gray; color:#fff;}
+.active{background:gray; color:#fff;}
+.empty{background:none;color:none;}

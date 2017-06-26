@@ -6355,4 +6355,12 @@ button.close {
     display: none !important;
   }
 }
+.div2{
+width:950px;
+height:75px;
+background-color:#FFFFFF;
+margin:auto;
+margin-top:50px;
+}
+.ul1{padding-left:10px;}
 /*# sourceMappingURL=bootstrap.css.map */
